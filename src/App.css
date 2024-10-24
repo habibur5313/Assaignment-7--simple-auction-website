@@ -1,0 +1,10 @@
+.banner{
+                    background-image: url(./assets/bg-shadow.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    
+}
+
+.active{
+                  background-color:#E7FE29 
+}
