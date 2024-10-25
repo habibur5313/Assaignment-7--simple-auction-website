@@ -47,6 +47,12 @@ const handleSelected = () => {
   setButtonActive(!buttonActive)
 }
 
+const handleRemove = (selectedPlayers) => {
+  const remainingPlayers =  SelectedPlayers.filter(b => selectedPlayers.id !== b.id )
+  setSelectedPlayers(remainingPlayers)
+  setFreeDolor(freeDolor + selectedPlayers.biddingPrice)
+}
+
 
   return (
     <div >
@@ -69,7 +75,7 @@ const handleSelected = () => {
   <Availables handleChoosePlayer={handleChoosePlayer}></Availables>
 )}
 {buttonActive || (
-<Selected selectedPlayers ={SelectedPlayers}></Selected>
+<Selected selectedPlayers ={SelectedPlayers} handleRemove={handleRemove}></Selected>
 )}
 
 </div>

@@ -4,7 +4,7 @@ const Banner = ({handleFreeDolor}) => {
                     return (
                                         <div>
                                            <div
-  className="hero mt-10 mx-auto   bg-opacity-60 banner">
+  className="hero mt-10 mx-auto   bg-opacity-60  banner">
   <div className="hero-overlay rounded-xl"></div>
   <div className="flex flex-col items-center my-10 text-neutral-content text-center">
                     <img className='mb-4' src={bannerImg} alt="" />

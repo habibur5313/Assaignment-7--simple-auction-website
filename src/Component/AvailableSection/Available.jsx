@@ -25,7 +25,7 @@ const {playerName,country,image,role,battingBowlingType,biddingPrice} = player
 
     <div className="flex justify-between items-center mb-5">
                     <p>Price: {biddingPrice} <i className="fa-solid fa-dollar-sign"></i></p>
-                    <button onClick={() => handleChoosePlayer(player)} className="py-1 px-2 border rounded-xl text-xl font-medium">Choose Player</button>
+                    <button onClick={() => handleChoosePlayer(player)} className="py-1 px-2 border rounded-xl text-xl font-medium shadow-lg bg-gradient-to-tl to-[#E7FE29] from-red-100">Choose Player</button>
     </div>
     
   </div>
