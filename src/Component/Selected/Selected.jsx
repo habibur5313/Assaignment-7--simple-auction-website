@@ -1,4 +1,4 @@
-const Selected = ({selectedPlayers, handleRemove}) => {
+const Selected = ({selectedPlayers, handleRemove,handleAddPlayers}) => {
                             
                     console.log(selectedPlayers);
                     
@@ -14,7 +14,7 @@ const Selected = ({selectedPlayers, handleRemove}) => {
                                         </div>
                                         <button onClick={() => handleRemove(selectedPlayer)}><i className="fa-solid text-2xl text-red-600 fa-trash"></i></button>
                                              </div>)}   
-                                             <button className="text-2xl font-semibold py-2 px-3 border rounded-xl bg-[#E7FE29]">Add More Players</button>      
+                                             <button onClick={handleAddPlayers} className="text-2xl font-semibold py-2 px-3 border rounded-xl bg-[#E7FE29]">Add More Players</button>      
                                         </div>
                     );
 };

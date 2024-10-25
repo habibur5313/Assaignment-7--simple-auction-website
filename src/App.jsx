@@ -5,6 +5,8 @@ import Banner from './Component/Header/Banner'
 import Availables from './Component/AvailableSection/Availables'
 import Footer from './Component/Footer/Footer'
 import Selected from './Component/Selected/Selected'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -14,29 +16,79 @@ const [SelectedPlayers, setSelectedPlayers] = useState([])
 
 const [buttonActive, setButtonActive] = useState(true)
 
-console.log(SelectedPlayers);
-
 
 const handleFreeDolor = () => {
   setFreeDolor (freeDolor + 1000000)
+  toast.success('Free Credit Added Succesfully', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+   
+    });
 }
 
 const handleChoosePlayer = (player) => {
   if(freeDolor > player.biddingPrice){
     const workItem =  SelectedPlayers.find(b => player.id === b.id )
     if( SelectedPlayers.length >= 6){
-      alert('not allowed')
+      toast.error('Maximum 6', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+       
+        });
     }
     else if( workItem){
-      alert('not allowed2')
+      toast.warn('This player is already sold !', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        
+        });
     }
     else{
+      toast.success('Player Choose Succesfull', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+     
+        });
       setSelectedPlayers([...SelectedPlayers,player])
       setFreeDolor(freeDolor - player.biddingPrice)
     }
   }
   else{
-    alert('Insufficiant Balance')
+    toast.error('Insufficiant Balance', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+     
+      });
   }
 }
 
@@ -47,11 +99,17 @@ const handleSelected = () => {
   setButtonActive(!buttonActive)
 }
 
+const handleAddPlayers = () => {
+  setButtonActive(!buttonActive)
+  
+}
+
 const handleRemove = (selectedPlayers) => {
   const remainingPlayers =  SelectedPlayers.filter(b => selectedPlayers.id !== b.id )
   setSelectedPlayers(remainingPlayers)
   setFreeDolor(freeDolor + selectedPlayers.biddingPrice)
 }
+
 
 
   return (
@@ -75,12 +133,25 @@ const handleRemove = (selectedPlayers) => {
   <Availables handleChoosePlayer={handleChoosePlayer}></Availables>
 )}
 {buttonActive || (
-<Selected selectedPlayers ={SelectedPlayers} handleRemove={handleRemove}></Selected>
+<Selected selectedPlayers ={SelectedPlayers} handleRemove={handleRemove} handleAddPlayers={handleAddPlayers}></Selected>
 )}
 
 </div>
       </div>
 <Footer></Footer>
+<ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+
+/>
     </div>
   )
 }
