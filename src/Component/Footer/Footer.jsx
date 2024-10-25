@@ -1,9 +1,9 @@
 import logo from '..//..//assets/logo.png'
-import Subscribe from '..//..//assets/Frame 11.png'
+
 const Footer = () => {
                     return (
-                                        <div className='bg-neutral'>
-                                                           <div className='max-w-52 pt-5 mx-auto'>
+                                        <div className=''>
+                                         <div className='max-w-52 pt-32 mx-auto '>
                                                            <img className='w-full'  src={logo} alt="" />
                                                            </div>
                                           <footer  className="footer  text-neutral-content p-2 md:p-6 lg:p-10">
@@ -32,15 +32,15 @@ const Footer = () => {
                                                             <div className="flex flex-col ">
                                                              <h1 className="text-xl font-medium mb-3">Subscribe</h1>
                                                              <p>Subscribe to our newsletter <br /> for the latest updates.</p>
-                                                             <div className="flex">
-                                                             <input type="text" placeholder="Type your email" className="input input-bordered w-full max-w-xs mb-3" />
-                                                             <img className='h-[50px]' src={Subscribe} alt="" />
+                                                             <div className="flex border rounded-xl mt-2">
+                                                             <input type="text" placeholder="Type your email" className="p-2 rounded-l-xl" />
+                                                             <button className='px-2 bg-red-500 rounded-r-xl text-xl font-medium'>Subscribe</button>
                                                              </div>
                                                             </div>
                                          </div>
                      
                     </section>
-                </footer>                    
+                </footer>                                       
                                         </div>
                     );
 };

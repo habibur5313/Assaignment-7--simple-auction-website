@@ -4,7 +4,7 @@
                     "country": "Bangladesh",
                     "image": "https://i.ibb.co.com/K9N12q4/350.png",
                     "role": "Batsman",
-                    "battingBowlingType": "Right-hand bat",
+                    "battingType": "Right-hand bat",
                     "biddingPrice": 100000
                                       },
                      {
@@ -13,7 +13,7 @@
                       "country": "Bangladesh",
                       "image": "https://i.ibb.co.com/XkT4cQT/images-3.jpg",
                       "role": "Batsman",
-                      "battingBowlingType": "Left-hand bat",
+                      "battingType": "Left-hand bat",
                       "biddingPrice": 100100
                     },
                   
@@ -23,7 +23,8 @@
                       "country": "Bangladesh",
                       "image": "https://i.ibb.co.com/7n2Pkvz/ezgif-2-9828453b56.jpg",
                       "role": "All-rounder",
-                      "battingBowlingType": "Right-hand bat",
+                      "battingType": "Right-hand bat",
+                      "bowlingType": "Right arm off-break",
                       "biddingPrice": 101000
                     },
                     {
@@ -32,7 +33,7 @@
                       "country": "Bangladesh",
                       "image": "https://i.ibb.co.com/tpnG1PD/images-1.jpg",
                       "role": "Bowler",
-                      "battingBowlingType": "Left-arm fast-medium",
+                      "bowlingType": "Left-arm fast-medium",
                       "biddingPrice": 110000
                     },
                     {
@@ -41,7 +42,7 @@
                       "country": "Pakistan",
                       "image": "https://i.ibb.co.com/hgrrBnL/131732569-babarazam.jpg",
                       "role": "Batsman",
-                      "battingBowlingType": "Right-hand bat",
+                      "battingType": "Right-hand bat",
                       "biddingPrice": 200000
                     },
                     {
@@ -50,7 +51,7 @@
                       "country": "Pakistan",
                       "image": "https://i.ibb.co.com/zfHX023/Shaheennew-1.jpg",
                       "role": "Bowler",
-                      "battingBowlingType": "Left-arm fast",
+                      "bowlingType": "Left-arm fast",
                       "biddingPrice": 200200
                     },
                     {
@@ -59,7 +60,7 @@
                       "country": "Pakistan",
                       "image": "https://i.ibb.co.com/qNKTDNm/images-2.jpg",
                       "role": "Batsman",
-                      "battingBowlingType": "Right-hand bat",
+                      "battingType": "Right-hand bat",
                       "biddingPrice": 210000
                     },
                    
@@ -70,7 +71,7 @@
                       "country": "England",
                       "image": "https://i.ibb.co.com/XFQMYBM/images-4.jpg",
                       "role": "Bowler",
-                      "battingBowlingType": "Right-arm legbreak",
+                      "bowlingType": "Right-arm leg-break",
                       "biddingPrice": 250000
                     },
                     
@@ -79,7 +80,8 @@
                     "country": "England",
                     "image": "https://i.ibb.co.com/JpN9Btj/54eec0b0-6da1-11ef-8f40-abb8708ece2a.jpg",
                     "role": "All-rounder",
-                    "battingBowlingType": "left-hand bat",
+                    "battingType": "left-hand bat",
+                    "bowlingType": "Right arm off-break",
                     "biddingPrice": 170000
                                       }
 

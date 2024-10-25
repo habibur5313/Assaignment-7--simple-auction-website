@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+
 const Selected = ({selectedPlayers, handleRemove,handleAddPlayers}) => {
                             
                   
                     
                     return (
-                                        <div className="min-h-[500px] mb-8">
+                                        <div className="min-h-[500px] mb-32">
                                              {selectedPlayers.map(selectedPlayer => <div className="flex mb-3 justify-between  items-center border rounded-xl py-4 px-5" key={selectedPlayer.id}>
                                              <div className="flex items-center gap-3">
                                                             <img className="w-[80px] rounded-xl" src={selectedPlayer.image} alt="" />

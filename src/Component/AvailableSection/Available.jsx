@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 const Available = ({player,handleChoosePlayer}) => {
 
-const {playerName,country,image,role,battingBowlingType,biddingPrice} = player
+const {playerName,country,image,role,battingType,bowlingType,biddingPrice} = player
                     return (
                                         <div className="border rounded-xl">
                                          <div className="card card-compact ">
@@ -18,9 +18,15 @@ const {playerName,country,image,role,battingBowlingType,biddingPrice} = player
     </div>
     <p>Rating</p>
 
+    <div className='flex justify-between items-center'>
+    <p>Batting Type</p>
+      <p className="text-gray-400">{battingType ? battingType : 'N/A'}</p>
+      
+    </div>
+
     <div className="flex justify-between items-center">
-                    <p>{battingBowlingType}</p>
-                    <p className="text-gray-400">{battingBowlingType}</p>
+                   <p>Bowling Type</p>
+                    <p className="text-gray-400">{bowlingType ? bowlingType : 'N/A'}</p>
     </div>
 
     <div className="flex justify-between items-center mb-5">

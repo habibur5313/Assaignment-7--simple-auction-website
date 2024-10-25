@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './Component/Header/Navbar'
 import Banner from './Component/Header/Banner'
 import Availables from './Component/AvailableSection/Availables'
-import Footer from './Component/Footer/Footer'
+import Footers from './Component/Footer/Footers'
 import Selected from './Component/Selected/Selected'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -149,7 +149,7 @@ const handleRemove = (selectedPlayers) => {
 
 </div>
       </div>
-<Footer></Footer>
+<Footers></Footers>
 <ToastContainer
 position="top-center"
 autoClose={5000}
