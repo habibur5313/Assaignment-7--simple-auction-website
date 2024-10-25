@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 const Available = ({player,handleChoosePlayer}) => {
 
@@ -33,5 +33,10 @@ const {playerName,country,image,role,battingBowlingType,biddingPrice} = player
                                         </div>
                     );
 };
+
+Available.propTypes = {
+  player: PropTypes.object.isRequired,
+  handleChoosePlayer: PropTypes.func.isRequired
+}
 
 export default Available;

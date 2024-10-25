@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 const Selected = ({selectedPlayers, handleRemove,handleAddPlayers}) => {
                             
-                    console.log(selectedPlayers);
+                  
                     
                     return (
                                         <div className="min-h-[500px] mb-8">
@@ -18,6 +19,12 @@ const Selected = ({selectedPlayers, handleRemove,handleAddPlayers}) => {
                                         </div>
                     );
 };
+
+Selected.propTypes = {
+     selectedPlayers: PropTypes.array.isRequired,
+     handleRemove: PropTypes.array.isRequired,
+     handleAddPlayers: PropTypes.func.isRequired
+} 
 
 export default Selected;
 

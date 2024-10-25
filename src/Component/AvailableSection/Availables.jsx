@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Available from "./Available";
-
+import PropTypes from 'prop-types'
 
 const Availables = ({handleChoosePlayer}) => {
 
@@ -19,5 +19,8 @@ const Availables = ({handleChoosePlayer}) => {
                                         </div>
                     );
 };
-
+Availables.propTypes = {
+               
+                    handleChoosePlayer: PropTypes.func.isRequired
+               }
 export default Availables;
