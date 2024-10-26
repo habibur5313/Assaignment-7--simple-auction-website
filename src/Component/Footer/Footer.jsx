@@ -34,13 +34,16 @@ const Footer = () => {
                                                              <p>Subscribe to our newsletter <br /> for the latest updates.</p>
                                                              <div className="flex border rounded-xl mt-2">
                                                              <input type="text" placeholder="Type your email" className="p-2 rounded-l-xl" />
-                                                             <button className='px-2 bg-red-500 rounded-r-xl text-xl font-medium'>Subscribe</button>
+                                                             <button className='px-2 bg-gradient-to-br from-red-400 to-yellow-300 text-black rounded-r-xl text-xl font-medium'>Subscribe</button>
                                                              </div>
                                                             </div>
                                          </div>
                      
                     </section>
-                </footer>                                       
+                </footer>       
+                <div className="border-t text-center pb-10 pt-4  text-xl text-white"> <p>
+                @2024 Your Company All Rights Reserved.</p>
+                </div>                                
                                         </div>
                     );
 };
