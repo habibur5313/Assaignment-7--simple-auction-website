@@ -1,6 +1,9 @@
 # Project Name
 - BPL Auction 2024
 
+# Live link
+- https://fumbling-feet.surge.sh/
+
 # A brief description
 - On this site you can choose the player. First you need to take free credit to choose player. Then you can choose the player. You can add more than 6 players. If you want to remove the player then you have to click on the selected button and click on the delete icon.
 
