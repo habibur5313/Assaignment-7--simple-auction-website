@@ -21,3 +21,6 @@
 - Components. React JS is built around the concept of components, which are reusable pieces of code that represent parts of a user interface
 -
 - Virtual DOM
+
+- # MARK
+- 60 out of 60
